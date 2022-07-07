@@ -21,6 +21,7 @@
     "javascript": "^1.0.0"
   },
   "devDependencies": {
+    "eslint": "^8.19.0",
     "jest": "^28.1.2"
   }
 }

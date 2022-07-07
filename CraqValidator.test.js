@@ -59,8 +59,21 @@ test('validates it is invalid if questions after complete_if are answered', () =
       ], { q0: 1, q1: 0 })
       
  
-      expect(validator.isValid()).toBe(true)
+      expect(validator.isValid()).toBe(false)
 })
+
+test('validates it is invalid if complete_if is not a terminal answer and further questions are not answered', () => {
+    const validator = new CraqValidator(
+        [
+            { text: 'q1', options: [{ text: 'yes' }, { text: 'no', complete_if_selected: true }] },
+            { text: 'q2', options: [{ text: 'an option' }, { text: 'another option' }] }
+          ], { q0: 0 }
+    )
+      
+ 
+      expect(validator.isValid()).toBe(false)
+})
+
 
 
 

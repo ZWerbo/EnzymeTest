@@ -16,9 +16,9 @@ class CraqValidator {
             if(this?.answers?.[questionKey] === undefined) {
                 errors[questionKey] = 'was not answered';
             }
-            // else if (Object.values(question).includes(true)) {
-
-            // }
+            else if (this.questions[0].options.length - 1 === this.answers[questionKey]) {
+                
+            }
             else if(this.answers[questionKey] > i) {
                 errors[questionKey] = 'has an answer that is not on the list of valid answers'
             }
@@ -27,7 +27,8 @@ class CraqValidator {
     }
 }
 
-// run it through linter everytime you save it will correct the code for
+//Ideas for find if question was completed. I would flatten all the Object values or entries and check to see if they include true
+//and check if the placement of true is equal to the answer index and if it has numbers after it. 
 
 module.exports = CraqValidator;
 
