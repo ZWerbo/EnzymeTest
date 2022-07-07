@@ -1,0 +1,26 @@
+{
+  "name": "craqval",
+  "version": "1.0.0",
+  "description": "",
+  "main": "CraqValidator.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZWerbo/EnzymeTest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZWerbo/EnzymeTest/issues"
+  },
+  "homepage": "https://github.com/ZWerbo/EnzymeTest#readme",
+  "dependencies": {
+    "javascript": "^1.0.0"
+  },
+  "devDependencies": {
+    "jest": "^28.1.2"
+  }
+}

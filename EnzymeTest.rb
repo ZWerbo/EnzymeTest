@@ -1,6 +1,8 @@
 require 'test/unit'
 
 class CraqValidatorTest < Test::Unit::TestCase
+
+    
   description 'it is invalid with no answers'
   def test1
     @questions = [{ text: 'q1', options: [{ text: 'an option' }, { text: 'another option' }] }]
